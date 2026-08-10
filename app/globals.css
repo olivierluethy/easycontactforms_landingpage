@@ -332,6 +332,16 @@
     border: 1px solid var(--border);
     border-radius: var(--radius);
   }
+
+  /* Hover lift — the product's .project-card interaction. */
+  .ecf-lift > .surface-card {
+    transition: border-color var(--transition), transform var(--transition), box-shadow var(--transition);
+  }
+  .ecf-lift:hover > .surface-card {
+    border-color: var(--border-strong);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+  }
 }
 
 @layer utilities {
@@ -344,5 +354,33 @@
     background-image: linear-gradient(var(--border) 1px, transparent 1px),
       linear-gradient(90deg, var(--border) 1px, transparent 1px);
     background-size: 46px 46px;
+  }
+
+  /* Hero: single column on small screens, split at the tablet breakpoint. */
+  .ecf-hero-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  @media (min-width: 900px) {
+    .ecf-hero-grid {
+      grid-template-columns: 1.05fr 0.95fr;
+    }
+  }
+
+  /* Generic auto-fit card grid used across marketing sections. */
+  .ecf-grid {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+  .ecf-grid-2 {
+    display: grid;
+    gap: 18px;
+    grid-template-columns: minmax(0, 1fr);
+  }
+  @media (min-width: 820px) {
+    .ecf-grid-2 {
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+    }
   }
 }
