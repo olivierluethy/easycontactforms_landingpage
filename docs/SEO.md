@@ -1,8 +1,8 @@
 # SEO Plan
 
 One codebase, two indexable landing pages plus a minimal index. Domain assumed
-`https://www.easycontactforms.com` (canonical host; update if the marketing site
-ships elsewhere). Each page targets a distinct intent cluster so the two pages
+`https://easycontactforms.com` (the apex is the marketing home; `app.` and `api.`
+are the product's existing subdomains). Each page targets a distinct intent cluster so the two pages
 don't cannibalise each other's keywords.
 
 ## Positioning angles explored (brainstorm → resolved)

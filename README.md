@@ -61,8 +61,10 @@ option and moving on.
   tracking and the signature, not a novelty face.
 - **Copy language: English.** The product's UI, docs and widget are all English
   and the audience is international.
-- **Canonical host assumed `https://www.easycontactforms.com`.** Set in
-  `lib/site.ts`; change there if the site ships elsewhere.
+- **Canonical host is the apex `https://easycontactforms.com`.** The product's
+  existing subdomains are `app.easycontactforms.com` (dashboard) and
+  `api.easycontactforms.com` (backend + embed script); the marketing site takes
+  the apex. Set in `lib/site.ts`.
 - **Live form preview is a non-interactive still.** The developer hero shows the
   form the embed renders without posting anywhere — it's a preview, not a live
   endpoint.
