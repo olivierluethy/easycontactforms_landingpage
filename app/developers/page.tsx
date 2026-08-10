@@ -10,6 +10,7 @@ import { Faq, type QA } from '@/components/Faq';
 import { CtaBand } from '@/components/CtaBand';
 import { JsonLd, faqSchema } from '@/components/JsonLd';
 import { DevHero } from '@/components/pages/DevHero';
+import { WaitingPing } from '@/components/WaitingPing';
 import { APP_URL, PAGES, SITE_NAME, SITE_URL } from '@/lib/site';
 
 const url = `${SITE_URL}${PAGES.developers.path}`;
@@ -144,6 +145,33 @@ export default function DevelopersPage() {
               </div>
             </Reveal>
           </div>
+        </Section>
+
+        {/* Signature moment: the amber "waiting" ping the backend powers */}
+        <Section ariaLabel="What the backend is for" style={{ paddingTop: 'clamp(40px, 6vw, 72px)', paddingBottom: 'clamp(40px, 6vw, 72px)' }}>
+          <Reveal>
+            <div
+              style={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                textAlign: 'center',
+                gap: 18,
+                maxWidth: 640,
+                margin: '0 auto',
+              }}
+            >
+              <WaitingPing size={132} />
+              <h2 style={{ fontSize: 'var(--fs-h2)', fontWeight: 700, letterSpacing: '-0.02em', margin: 0 }}>
+                A backend whose whole job is to never drop a message.
+              </h2>
+              <p style={{ margin: 0, color: 'var(--text-dim)', fontSize: 'var(--fs-lead)' }}>
+                Stored the instant it&apos;s submitted, addressable only by an unguessable
+                ID, and surfaced in a dashboard that flags it amber until it&apos;s answered.
+                The hard parts are done; you own the result.
+              </p>
+            </div>
+          </Reveal>
         </Section>
 
         {/* Security / correctness proof */}

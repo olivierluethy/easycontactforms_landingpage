@@ -9,6 +9,7 @@ import { Faq, type QA } from '@/components/Faq';
 import { CtaBand } from '@/components/CtaBand';
 import { JsonLd, faqSchema } from '@/components/JsonLd';
 import { BusinessHero } from '@/components/pages/BusinessHero';
+import { WaitingPing } from '@/components/WaitingPing';
 import { APP_URL, PAGES, SITE_NAME, SITE_URL } from '@/lib/site';
 
 const url = `${SITE_URL}${PAGES.business.path}`;
@@ -156,6 +157,33 @@ export default function BusinessPage() {
                 </RevealItem>
               ))}
             </ol>
+          </Reveal>
+        </Section>
+
+        {/* Signature moment: the amber "waiting" ping */}
+        <Section ariaLabel="What the amber rail means" style={{ paddingTop: 'clamp(40px, 6vw, 72px)', paddingBottom: 'clamp(40px, 6vw, 72px)' }}>
+          <Reveal>
+            <div
+              style={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                textAlign: 'center',
+                gap: 18,
+                maxWidth: 620,
+                margin: '0 auto',
+              }}
+            >
+              <WaitingPing size={132} />
+              <h2 style={{ fontSize: 'var(--fs-h2)', fontWeight: 700, letterSpacing: '-0.02em', margin: 0 }}>
+                Amber means someone is waiting for you.
+              </h2>
+              <p style={{ margin: 0, color: 'var(--text-dim)', fontSize: 'var(--fs-lead)' }}>
+                It&apos;s the one colour the interface reserves for a real person who
+                reached out and hasn&apos;t heard back. When it&apos;s gone, you&apos;re
+                caught up — and you never had to wonder.
+              </p>
+            </div>
           </Reveal>
         </Section>
 
