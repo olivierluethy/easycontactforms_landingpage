@@ -1,4 +1,17 @@
-# EasyContactForms — marketing site
+<div align="center">
+  <img src="app/icon.svg" alt="EasyContactForms logo" width="140" />
+  <h1>EasyContactForms</h1>
+  <p><b>Conversion-focused marketing site for the EasyContactForms service.</b><br/>Two audience-specific landing pages — site owners and developers — in one Next.js codebase that reuses the product's own design system.</p>
+  <p>
+    <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-blue.svg"></a>
+    <img alt="Next.js" src="https://img.shields.io/badge/Next.js-14-000000?logo=nextdotjs&logoColor=white">
+    <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white">
+    <img alt="Tailwind CSS" src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?logo=tailwindcss&logoColor=white">
+    <img alt="Framer Motion" src="https://img.shields.io/badge/Framer_Motion-0055FF?logo=framer&logoColor=white">
+  </p>
+</div>
+
+---
 
 Two conversion-focused landing pages for **EasyContactForms**, built in one
 Next.js App Router + TypeScript codebase that shares a design system lifted
@@ -68,3 +81,13 @@ option and moving on.
 - **Live form preview is a non-interactive still.** The developer hero shows the
   form the embed renders without posting anywhere — it's a preview, not a live
   endpoint.
+
+
+## License
+
+Released under the [MIT License](LICENSE) © 2026 Olivier Lüthy. You're free to use, modify and distribute this
+software, including commercially, as long as the copyright notice and license are included.
+
+## Author
+
+Built by **Olivier Lüthy** — [GitHub](https://github.com/olivierluethy).
